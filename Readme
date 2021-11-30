@@ -1,10 +1,1 @@
-J'ai certains soucis jusqu'ici j'ai la fonction RequireAuth que je n'ai pas encore implementer
-cette fontion permet de controller si un user qui vient de  se connecter a la plate forme a un cookie pour pouvoir connecter cette personne
- automatiquement , j'ai dit que si ca ne marche pas toujours je vais utiliser le local Stroge
 
-
- J'ai aussi un probleme c'est avec ma base de donne j'ai configure dans la Bd qu'une adresse email est Unique mais 
- je me rends compte que je peux creer plusierus Compte avec la meme adresse E mail.2h.30min ou 40 min comme ca la . .
-
-
- 2h58smin
