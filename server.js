@@ -9,10 +9,20 @@ require("dotenv").config({ path: "./config/.env" });
 // je fais reconnaitre ma base de donnee
 require("./config/db.js");
 const { checkUser, requireAuth } = require("./middleware/auth.middleware.js");
+const cors = require("cors");
 
 const app = express();
 
 // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const corsOptions = {
+  origin: process.env.CLIENT_URL,
+  credentials: true,
+  allowedHeaders: ["sessionId", "Content-Type"],
+  exposedHeaders: ["sessionId"],
+  methods: "GET,HEAD,PUT,PATCH,DELETE",
+  prefLightContinue: false,
+};
+app.use(cors(corsOptions));
 
 // app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));

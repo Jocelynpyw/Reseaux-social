@@ -32,6 +32,9 @@ const userSchema = new mongoose.Schema(
       required: true,
       maxlength: 1024,
     },
+    picture: {
+      type: String,
+    },
 
     followers: {
       type: [String],

@@ -6,5 +6,8 @@ cette fontion permet de controller si un user qui vient de  se connecter a la pl
  J'ai aussi un probleme c'est avec ma base de donne j'ai configure dans la Bd qu'une adresse email est Unique mais 
  je me rends compte que je peux creer plusierus Compte avec la meme adresse E mail.2h.30min ou 40 min comme ca la . .
 
+multer est un package qui traite les images
+ 4h26min21s
+  je dois tester l 'update d'un Message
 
- 3h01smin
+installer multer avec la commande "multer@2.0.0-rc.1"

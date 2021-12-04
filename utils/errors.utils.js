@@ -38,3 +38,14 @@ module.exports.signInErrors = (err) => {
   }
   return errors;
 };
+// Erreurs Lors du telechargement
+
+module.exports.uploadErrors = (err) => {
+  let errors = { format: "", maxSize: "" };
+
+  if (err.message.includes("invalid file"))
+    errors.format = "Format Incompatible";
+  if (err.message.includes("max size"))
+    errors.maxSize = "Le fihier a depasse les 50ko";
+  return errors;
+};
